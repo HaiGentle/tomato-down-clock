@@ -26,14 +26,13 @@ export default function App() {
     let timeInterval, curentSecond;
     if (time.run === "run" && time.second > 0) {
       curentSecond = time.second;
-      refCurentTime.current = time.second;
       timeInterval = setInterval(() => {
         if (refTime !== null && curentSecond > 0) {
           curentSecond -= 1;
-          refCurentTime.current -= 1;
+          refCurentTime.current = curentSecond;
           refTime.current.innerHTML = formatTime(curentSecond);
         }
-      }, 100);
+      }, 1000);
     }
 
     if (time.run === "reset") {
