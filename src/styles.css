@@ -1,0 +1,31 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: unset;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(53, 53, 53);
+}
+h1 {
+  color: white;
+  font-size: 3em;
+  margin-top: unset;
+  font-weight: 200;
+  padding-top: 100px;
+}
+
+.btn-run,
+.btn-pause,
+.btn-reset {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 7px;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
