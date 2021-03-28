@@ -4,13 +4,13 @@ import { faPlay, faPause, faRedo } from "@fortawesome/free-solid-svg-icons";
 import "./styles.css";
 
 const formatTime = (second) => {
-  const hourString = Math.floor(second / 60)
+  const minuteString = Math.floor(second / 60)
     .toString()
     .padStart(2, "0");
 
   const secondString = (second % 60).toString().padStart(2, "0");
 
-  return `${hourString}:${secondString}`;
+  return `${minuteString}:${secondString}`;
 };
 
 export default function App() {
